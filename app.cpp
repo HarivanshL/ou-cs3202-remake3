@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
             break;
         }
     }
-
+    //Changes to commit 3
     int sumval = sum(vec);
     int productval = product(vec);
     cout<< "Sum: " << sumval <<endl;
