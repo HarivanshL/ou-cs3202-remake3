@@ -18,3 +18,24 @@ int product(vector<int> vec){
     }
     return total;
 }
+
+int main(int argc, char *argv[])
+{
+    vector<int> vec;
+    int num =0;
+    cout<< "Enter numbers to be inserted into the array. -10000 will end inputs"<<endl;
+    while(cin>>num){
+        if(num != -10000){
+            vec.push_back(num);
+        }
+        else{
+            break;
+        }
+    }
+
+    int sumval = sum(vec);
+    int productval = product(vec);
+    cout<< "Sum: " << sumval <<endl;
+    cout<< "Product: " << productval <<endl;
+
+}
