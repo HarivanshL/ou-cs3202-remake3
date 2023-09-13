@@ -19,6 +19,17 @@ int product(vector<int> vec){
     return total;
 }
 
+int * reversed(vector<int> vec){
+    int * arr = new int[vec.size()];
+    int count =0;
+    for(int i =vec.size()-1; i >=0;--i){
+        arr[count] = vec[i];
+        ++count;
+    }
+    
+    return arr;
+}
+
 int main(int argc, char *argv[])
 {
     vector<int> vec;
