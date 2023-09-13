@@ -9,3 +9,12 @@ int sum(vector<int> vec){
     }
     return total;
 }
+
+
+int product(vector<int> vec){
+    int total =1;
+    for(int i =0; i <vec.size();++i){
+        total = vec[i] * total;
+    }
+    return total;
+}
