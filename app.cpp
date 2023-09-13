@@ -48,5 +48,9 @@ int main(int argc, char *argv[])
     int productval = product(vec);
     cout<< "Sum: " << sumval <<endl;
     cout<< "Product: " << productval <<endl;
+    int * p = reversed(vec);
+    for(int i =0; i <vec.size();++i){
+        cout<< p[i] <<endl;
+    }
 
 }
